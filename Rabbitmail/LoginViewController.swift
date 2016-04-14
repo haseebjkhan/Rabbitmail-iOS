@@ -58,7 +58,12 @@ class LoginViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue()) {
                 // Update the UI on the main thread.
                 self.resultTextview.text = responseString
-                self.loggedUserId = responseString
+                
+                let json = self.convertStringToDictionary(responseString)
+            
+                self.loggedUserId =  json!["oid"] as! String
+                print("after extracting oid = \(self.loggedUserId)")
+                
                 self.performSegueWithIdentifier("openUserDashboard", sender:self)
             }
         }
@@ -73,9 +78,16 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func doLogin() {
-        
-        
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
+            do {
+                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? [String:AnyObject]
+                return json
+            } catch {
+                print("Something went wrong")
+            }
+        }
+        return nil
     }
     
 }

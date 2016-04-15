@@ -1,5 +1,5 @@
 //
-//  CustomerDashboardViewController.swift
+//  SWCustomerDashboardViewController.swift
 //  Rabbitmail
 //
 //  Created by Shumail Mohy ud Din on 4/15/16.
@@ -8,25 +8,21 @@
 
 import UIKit
 
-class CustomerDashboardViewController: UIViewController {
-    
-    @IBOutlet var userIdLabel : UILabel!
-    
-    var userIdLabelText : String! = nil
+class SWCustomerDashboardViewController: UIViewController {
 
+    @IBOutlet var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("customer view me");
-        print("user id = \(userIdLabelText)")
-        userIdLabel.text = userIdLabelText
-        print("from id = \(userIdLabel.text)")
 
-        // Do any additional setup after loading the view.
         
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        self.performSegueWithIdentifier("segueToSWController", sender:self)
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

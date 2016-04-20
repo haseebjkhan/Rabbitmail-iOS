@@ -35,6 +35,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(sender: AnyObject) {
         
+        var errorFlag = false
+        
         let request = NSMutableURLRequest(URL: NSURL(string: "http://shumailmohyuddin.com/osites/FYP/api_user.php")!)
         request.HTTPMethod = "POST"
         let username = usernameField.text
@@ -44,7 +46,7 @@ class LoginViewController: UIViewController {
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
             guard error == nil && data != nil else {                          // check for fundamental networking error
-                print("error=\(error)")
+                print("error=\(error)[]--")
                 return
             }
             
@@ -55,17 +57,39 @@ class LoginViewController: UIViewController {
             
             responseString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
             print("responseString = \(responseString)")
-            dispatch_async(dispatch_get_main_queue()) {
-                // Update the UI on the main thread.
-                self.resultTextview.text = responseString
-                
-                let json = self.convertStringToDictionary(responseString)
+            let comparisonErrorKeyword = "error"
             
-                self.loggedUserId =  json!["oid"] as! String
-                print("after extracting oid = \(self.loggedUserId)")
-                
-                self.performSegueWithIdentifier("openUserDashboard", sender:self)
+            responseString = (responseString as NSString).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            
+            if(responseString == comparisonErrorKeyword) {
+                errorFlag = true
+            } else {
+                print("in responseString comparison ELSE")
             }
+            
+            //check for login successful or not
+            let json = self.convertStringToDictionary(responseString)
+            if(errorFlag) {
+                print("here in error")
+                print("login unsuccessful")
+                
+                NSOperationQueue.mainQueue().addOperationWithBlock {
+                    self.displayAlert("Login Unsuccessful", message1: "Incorrect username or Password")
+                    
+                }
+                
+            } else {
+                dispatch_async(dispatch_get_main_queue()) {
+                    // Update the UI on the main thread.
+                    self.resultTextview.text = responseString
+                    
+                    self.loggedUserId =  json!["oid"] as! String
+                    print("after extracting oid = \(self.loggedUserId)")
+                    
+                    self.performSegueWithIdentifier("openUserDashboard", sender:self)
+                }
+            }
+            
         }
         task.resume()
     }
@@ -88,6 +112,17 @@ class LoginViewController: UIViewController {
             }
         }
         return nil
+    }
+    
+    func displayAlert(title1: String , message1: String) -> Void {
+        
+        let alertController = UIAlertController(title: title1, message:
+            message1, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+        return
+        
     }
     
 }

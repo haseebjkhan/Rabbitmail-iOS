@@ -10,6 +10,8 @@
 		74239C131CC9A10D001D624B /* CampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C121CC9A10D001D624B /* CampaignsViewController.swift */; };
 		74239C151CCAB64E001D624B /* MailingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C141CCAB64E001D624B /* MailingListViewController.swift */; };
 		74239C171CCABB83001D624B /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C161CCABB83001D624B /* AnalyticsViewController.swift */; };
+		74239C381CCABFFF001D624B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74239C311CCABFBD001D624B /* Charts.framework */; };
+		74239C391CCABFFF001D624B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74239C311CCABFBD001D624B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564D1CBED5020037E559 /* AppDelegate.swift */; };
 		74A656501CBED5020037E559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564F1CBED5020037E559 /* ViewController.swift */; };
 		74A656531CBED5020037E559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A656511CBED5020037E559 /* Main.storyboard */; };
@@ -20,10 +22,63 @@
 		74A656731CC13A760037E559 /* SWCustomerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A656721CC13A760037E559 /* SWCustomerDashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		74239C301CCABFBD001D624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		74239C321CCABFBD001D624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		74239C341CCABFBD001D624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		74239C361CCABFBD001D624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		74239C3A1CCABFFF001D624B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74239C3C1CCABFFF001D624B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74239C391CCABFFF001D624B /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		74239C121CC9A10D001D624B /* CampaignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsViewController.swift; sourceTree = "<group>"; };
 		74239C141CCAB64E001D624B /* MailingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailingListViewController.swift; sourceTree = "<group>"; };
 		74239C161CCABB83001D624B /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		74239C291CCABFBD001D624B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		74A6564A1CBED5020037E559 /* Rabbitmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabbitmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A6564D1CBED5020037E559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A6564F1CBED5020037E559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,15 +98,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74239C381CCABFFF001D624B /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74239C2A1CCABFBD001D624B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74239C311CCABFBD001D624B /* Charts.framework */,
+				74239C331CCABFBD001D624B /* Charts.framework */,
+				74239C351CCABFBD001D624B /* Charts.framework */,
+				74239C371CCABFBD001D624B /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		74A656411CBED5020037E559 = {
 			isa = PBXGroup;
 			children = (
+				74239C291CCABFBD001D624B /* Charts.xcodeproj */,
 				74A6564C1CBED5020037E559 /* Rabbitmail */,
 				74A6564B1CBED5020037E559 /* Products */,
 			);
@@ -104,10 +172,12 @@
 				74A656461CBED5020037E559 /* Sources */,
 				74A656471CBED5020037E559 /* Frameworks */,
 				74A656481CBED5020037E559 /* Resources */,
+				74239C3C1CCABFFF001D624B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74239C3B1CCABFFF001D624B /* PBXTargetDependency */,
 			);
 			name = Rabbitmail;
 			productName = Rabbitmail;
@@ -141,12 +211,49 @@
 			mainGroup = 74A656411CBED5020037E559;
 			productRefGroup = 74A6564B1CBED5020037E559 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74239C2A1CCABFBD001D624B /* Products */;
+					ProjectRef = 74239C291CCABFBD001D624B /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				74A656491CBED5020037E559 /* Rabbitmail */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		74239C311CCABFBD001D624B /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 74239C301CCABFBD001D624B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74239C331CCABFBD001D624B /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 74239C321CCABFBD001D624B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74239C351CCABFBD001D624B /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 74239C341CCABFBD001D624B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74239C371CCABFBD001D624B /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 74239C361CCABFBD001D624B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		74A656481CBED5020037E559 /* Resources */ = {
@@ -178,6 +285,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74239C3B1CCABFFF001D624B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 74239C3A1CCABFFF001D624B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74A656511CBED5020037E559 /* Main.storyboard */ = {
@@ -280,6 +395,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Charts/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Rabbitmail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.7diagonals.Rabbitmail;
@@ -295,6 +415,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Charts/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Rabbitmail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.7diagonals.Rabbitmail;

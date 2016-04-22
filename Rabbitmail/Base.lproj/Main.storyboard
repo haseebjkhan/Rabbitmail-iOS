@@ -465,23 +465,29 @@
                         <viewControllerLayoutGuide type="bottom" id="31v-G7-LPV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zRy-wz-9OH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analytics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esv-E4-Iv0">
-                                <rect key="frame" x="138" y="183" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01V-qH-hUd" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="62" y="161" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="01V-qH-hUd" firstAttribute="leading" secondItem="zRy-wz-9OH" secondAttribute="leading" id="299-ob-m2H"/>
+                            <constraint firstItem="01V-qH-hUd" firstAttribute="top" secondItem="Rm9-hg-8rO" secondAttribute="bottom" id="KMa-rk-I5n"/>
+                            <constraint firstAttribute="trailing" secondItem="01V-qH-hUd" secondAttribute="trailing" id="m8B-1Y-vrc"/>
+                            <constraint firstItem="31v-G7-LPV" firstAttribute="top" secondItem="01V-qH-hUd" secondAttribute="bottom" id="niC-f4-wvj"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="GEz-fF-YRP">
                         <barButtonItem key="leftBarButtonItem" title="menu" id="e2g-d2-mXE"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="barChartView" destination="01V-qH-hUd" id="Al5-t2-h68"/>
                         <outlet property="menuButton" destination="e2g-d2-mXE" id="iGp-Bc-rw4"/>
                     </connections>
                 </viewController>

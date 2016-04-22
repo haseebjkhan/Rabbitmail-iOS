@@ -197,7 +197,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="GrC-20-ZAe">
+                            <tableViewSection headerTitle="Menu" id="GrC-20-ZAe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xI7-mi-7fr">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -214,6 +214,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3rM-2F-wlX" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="512-xA-GK5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5li-Cq-ENP">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -230,6 +233,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jWc-mj-uM0" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="LLq-kB-0GK"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4O4-50-i4v">
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
@@ -238,7 +244,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campaigns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en9-vH-X4I">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analytics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en9-vH-X4I">
                                                     <rect key="frame" x="23" y="11" width="179" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -246,6 +252,25 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hvl-Ge-y0L">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hvl-Ge-y0L" id="pSW-IK-w9c">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-2s-wmX">
+                                                    <rect key="frame" x="23" y="11" width="179" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="69o-qA-bou" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="6eh-AC-DLH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -259,7 +284,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXr-uY-dd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439.5" y="1070.5"/>
+            <point key="canvasLocation" x="689.5" y="2037.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iim-53-gF5">
@@ -276,7 +301,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGo-dx-aH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495.5" y="1738.5"/>
+            <point key="canvasLocation" x="1711.5" y="1012.5"/>
+        </scene>
+        <!--Campaigns-->
+        <scene sceneID="BH9-4N-DDx">
+            <objects>
+                <navigationController title="Campaigns" id="jWc-mj-uM0" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJm-If-YcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rqv-nj-M8H" kind="relationship" relationship="rootViewController" id="5r4-fk-WLX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fC-bo-YJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5" y="1780.5"/>
         </scene>
         <!--Customer Dashboard View Controller-->
         <scene sceneID="Zzv-2w-3ek">
@@ -309,7 +351,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6v-8U-QNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097.5" y="1610.5"/>
+            <point key="canvasLocation" x="2181.5" y="1006.5"/>
+        </scene>
+        <!--Campaigns View Controller-->
+        <scene sceneID="NtY-7O-unL">
+            <objects>
+                <viewController title="Campaigns View Controller" id="rqv-nj-M8H" customClass="CampaignsViewController" customModule="Rabbitmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j9F-ZT-d5X"/>
+                        <viewControllerLayoutGuide type="bottom" id="JMg-XW-tco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slP-wb-IJH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campaigns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEh-zg-2sf">
+                                <rect key="frame" x="111" y="146" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oCk-gO-2jD">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="n5B-YP-Zgt"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="menuButton" destination="n5B-YP-Zgt" id="D96-ZU-UP5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHt-QN-s6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5" y="1780.5"/>
+        </scene>
+        <!--Mailing-Lists -->
+        <scene sceneID="veq-4h-YVe">
+            <objects>
+                <navigationController title="Mailing-Lists " id="3rM-2F-wlX" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O4y-CG-UiG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="b79-Af-ubg" kind="relationship" relationship="rootViewController" id="w9B-M4-gFq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t23-8k-ub3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5" y="2530.5"/>
+        </scene>
+        <!--Mailing-lists view controller-->
+        <scene sceneID="g4F-jp-BVU">
+            <objects>
+                <viewController title="Mailing-lists view controller" id="b79-Af-ubg" customClass="MailingListViewController" customModule="Rabbitmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKp-QE-vj3"/>
+                        <viewControllerLayoutGuide type="bottom" id="b62-ya-uRA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K0D-N8-rKj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxy-51-BOW">
+                                <rect key="frame" x="172" y="217" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Sv-DT-DLK">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="XGQ-Vu-NZ0"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="menuButton" destination="XGQ-Vu-NZ0" id="DP3-uM-Zbf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="646-ak-rhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5" y="2530.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P17-NH-45b">
@@ -331,4 +456,7 @@
             <point key="canvasLocation" x="489.5" y="47.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6eh-AC-DLH"/>
+    </inferredMetricsTieBreakers>
 </document>

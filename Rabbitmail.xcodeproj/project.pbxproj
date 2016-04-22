@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74239C131CC9A10D001D624B /* CampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C121CC9A10D001D624B /* CampaignsViewController.swift */; };
+		74239C151CCAB64E001D624B /* MailingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C141CCAB64E001D624B /* MailingListViewController.swift */; };
 		74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564D1CBED5020037E559 /* AppDelegate.swift */; };
 		74A656501CBED5020037E559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564F1CBED5020037E559 /* ViewController.swift */; };
 		74A656531CBED5020037E559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A656511CBED5020037E559 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74239C121CC9A10D001D624B /* CampaignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsViewController.swift; sourceTree = "<group>"; };
+		74239C141CCAB64E001D624B /* MailingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailingListViewController.swift; sourceTree = "<group>"; };
 		74A6564A1CBED5020037E559 /* Rabbitmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabbitmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A6564D1CBED5020037E559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A6564F1CBED5020037E559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				74A6565F1CBFEC990037E559 /* LoginViewController.swift */,
 				74A656611CC0317E0037E559 /* CustomerDashboardViewController.swift */,
 				74A656721CC13A760037E559 /* SWCustomerDashboardViewController.swift */,
+				74239C121CC9A10D001D624B /* CampaignsViewController.swift */,
+				74239C141CCAB64E001D624B /* MailingListViewController.swift */,
 			);
 			path = Rabbitmail;
 			sourceTree = "<group>";
@@ -158,9 +164,11 @@
 			files = (
 				74A656601CBFEC990037E559 /* LoginViewController.swift in Sources */,
 				74A656731CC13A760037E559 /* SWCustomerDashboardViewController.swift in Sources */,
+				74239C131CC9A10D001D624B /* CampaignsViewController.swift in Sources */,
 				74A656621CC0317E0037E559 /* CustomerDashboardViewController.swift in Sources */,
 				74A6566F1CC12CE80037E559 /* SWRevealViewController.m in Sources */,
 				74A656501CBED5020037E559 /* ViewController.swift in Sources */,
+				74239C151CCAB64E001D624B /* MailingListViewController.swift in Sources */,
 				74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

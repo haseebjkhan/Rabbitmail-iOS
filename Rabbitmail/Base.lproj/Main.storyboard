@@ -252,6 +252,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OGA-zV-KtW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="DFQ-0v-lKo"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hvl-Ge-y0L">
                                         <rect key="frame" x="0.0" y="160" width="375" height="44"/>
@@ -284,7 +287,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXr-uY-dd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689.5" y="2037.5"/>
+            <point key="canvasLocation" x="689.5" y="2697.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iim-53-gF5">
@@ -435,6 +438,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="646-ak-rhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2181.5" y="2530.5"/>
+        </scene>
+        <!--Analytics-->
+        <scene sceneID="PkK-Xk-dIR">
+            <objects>
+                <navigationController title="Analytics" id="OGA-zV-KtW" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gya-CJ-yBh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oDg-0t-5Z7" kind="relationship" relationship="rootViewController" id="BhZ-Ye-QAe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwk-9Z-gka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5" y="3274.5"/>
+        </scene>
+        <!--Analytics View Controller-->
+        <scene sceneID="VWU-yf-b8d">
+            <objects>
+                <viewController title="Analytics View Controller" id="oDg-0t-5Z7" customClass="AnalyticsViewController" customModule="Rabbitmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rm9-hg-8rO"/>
+                        <viewControllerLayoutGuide type="bottom" id="31v-G7-LPV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRy-wz-9OH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analytics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esv-E4-Iv0">
+                                <rect key="frame" x="138" y="183" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GEz-fF-YRP">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="e2g-d2-mXE"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="menuButton" destination="e2g-d2-mXE" id="iGp-Bc-rw4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxf-8s-MDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5" y="3274.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P17-NH-45b">

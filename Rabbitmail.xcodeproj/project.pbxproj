@@ -16,6 +16,7 @@
 		74239C401CCBCC74001D624B /* MailingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C3F1CCBCC74001D624B /* MailingListTableViewController.swift */; };
 		74239C421CCBD28D001D624B /* PSO_MailingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C411CCBD28D001D624B /* PSO_MailingList.swift */; };
 		74239C461CCBD90B001D624B /* SampleData_MailingListsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C451CCBD90B001D624B /* SampleData_MailingListsJSON.swift */; };
+		74239C481CCBF81E001D624B /* MailingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C471CCBF81E001D624B /* MailingListCell.swift */; };
 		74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564D1CBED5020037E559 /* AppDelegate.swift */; };
 		74A656501CBED5020037E559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564F1CBED5020037E559 /* ViewController.swift */; };
 		74A656531CBED5020037E559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A656511CBED5020037E559 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		74239C3F1CCBCC74001D624B /* MailingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailingListTableViewController.swift; sourceTree = "<group>"; };
 		74239C411CCBD28D001D624B /* PSO_MailingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSO_MailingList.swift; sourceTree = "<group>"; };
 		74239C451CCBD90B001D624B /* SampleData_MailingListsJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData_MailingListsJSON.swift; sourceTree = "<group>"; };
+		74239C471CCBF81E001D624B /* MailingListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailingListCell.swift; sourceTree = "<group>"; };
 		74A6564A1CBED5020037E559 /* Rabbitmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabbitmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A6564D1CBED5020037E559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A6564F1CBED5020037E559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				74239C161CCABB83001D624B /* AnalyticsViewController.swift */,
 				74239C3D1CCBBC05001D624B /* DataContainerSingleton.swift */,
 				74239C3F1CCBCC74001D624B /* MailingListTableViewController.swift */,
+				74239C471CCBF81E001D624B /* MailingListCell.swift */,
 			);
 			path = Rabbitmail;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				74A656501CBED5020037E559 /* ViewController.swift in Sources */,
 				74239C151CCAB64E001D624B /* MailingListViewController.swift in Sources */,
 				74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */,
+				74239C481CCBF81E001D624B /* MailingListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

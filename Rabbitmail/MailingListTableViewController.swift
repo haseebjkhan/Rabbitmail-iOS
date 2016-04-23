@@ -22,11 +22,11 @@ class MailingListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("MailingListCell", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("MailingListCell", forIndexPath: indexPath) as! MailingListCell
             
             let mailingListRow = self.mailingLists[indexPath.row] as PSO_MailingList
-            cell.textLabel?.text = mailingListRow.name
-            cell.detailTextLabel?.text = mailingListRow.listId
+            cell.mailingListRow = mailingListRow
+            
             return cell
     }
 

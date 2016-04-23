@@ -400,7 +400,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="b79-Af-ubg" kind="relationship" relationship="rootViewController" id="w9B-M4-gFq"/>
+                        <segue destination="w5L-cu-6qc" kind="relationship" relationship="rootViewController" id="lYz-3w-yJK"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t23-8k-ub3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="646-ak-rhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181.5" y="2530.5"/>
+            <point key="canvasLocation" x="3002.5" y="2084.5"/>
         </scene>
         <!--Analytics-->
         <scene sceneID="PkK-Xk-dIR">
@@ -495,6 +495,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jxf-8s-MDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2181.5" y="3274.5"/>
+        </scene>
+        <!--MailingList Table Controller-->
+        <scene sceneID="JNx-Rq-dF0">
+            <objects>
+                <tableViewController title="MailingList Table Controller" id="w5L-cu-6qc" customClass="MailingListTableViewController" customModule="Rabbitmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="APi-M0-aUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MailingListCell" textLabel="hvR-dy-m1T" detailTextLabel="a34-ch-3z1" style="IBUITableViewCellStyleSubtitle" id="exA-jy-Ehb">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="exA-jy-Ehb" id="YHV-cv-H7v">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hvR-dy-m1T">
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a34-ch-3z1">
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w5L-cu-6qc" id="j2P-Nw-o1Z"/>
+                            <outlet property="delegate" destination="w5L-cu-6qc" id="gyf-5e-Dbp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mailing Lists" id="EPf-0c-riN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaS-Vk-BcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5" y="2530.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P17-NH-45b">

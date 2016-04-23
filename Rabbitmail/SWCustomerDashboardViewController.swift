@@ -11,6 +11,7 @@ import UIKit
 class SWCustomerDashboardViewController: UIViewController {
 
     @IBOutlet var menuButton: UIBarButtonItem!
+    @IBOutlet var userIdLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,9 @@ class SWCustomerDashboardViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        // Do any additional setup after loading the view.
+        let globalCustomerId = "dashboard - " + DataContainerSingleton.sharedDataContainer.customerId!
+        
+        userIdLabel.text = globalCustomerId
     }
 
     override func didReceiveMemoryWarning() {

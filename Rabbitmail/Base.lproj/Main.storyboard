@@ -350,6 +350,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="menuButton" destination="m8G-QT-oaJ" id="Ein-of-CBz"/>
+                        <outlet property="userIdLabel" destination="mhb-SA-2XP" id="aBR-cn-VsD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6v-8U-QNf" userLabel="First Responder" sceneMemberID="firstResponder"/>

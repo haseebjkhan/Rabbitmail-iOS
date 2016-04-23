@@ -86,6 +86,9 @@ class LoginViewController: UIViewController {
                     self.loggedUserId =  json!["oid"] as! String
                     print("after extracting oid = \(self.loggedUserId)")
                     
+                    //Save the changed value back to our data container singleton
+                    DataContainerSingleton.sharedDataContainer.customerId = self.loggedUserId
+                    
                     self.performSegueWithIdentifier("openUserDashboard", sender:self)
                 }
             }

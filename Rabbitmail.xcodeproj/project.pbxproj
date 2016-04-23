@@ -12,6 +12,7 @@
 		74239C171CCABB83001D624B /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C161CCABB83001D624B /* AnalyticsViewController.swift */; };
 		74239C381CCABFFF001D624B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74239C311CCABFBD001D624B /* Charts.framework */; };
 		74239C391CCABFFF001D624B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74239C311CCABFBD001D624B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74239C3E1CCBBC05001D624B /* DataContainerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74239C3D1CCBBC05001D624B /* DataContainerSingleton.swift */; };
 		74A6564E1CBED5020037E559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564D1CBED5020037E559 /* AppDelegate.swift */; };
 		74A656501CBED5020037E559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6564F1CBED5020037E559 /* ViewController.swift */; };
 		74A656531CBED5020037E559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A656511CBED5020037E559 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		74239C141CCAB64E001D624B /* MailingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailingListViewController.swift; sourceTree = "<group>"; };
 		74239C161CCABB83001D624B /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		74239C291CCABFBD001D624B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		74239C3D1CCBBC05001D624B /* DataContainerSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContainerSingleton.swift; sourceTree = "<group>"; };
 		74A6564A1CBED5020037E559 /* Rabbitmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabbitmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A6564D1CBED5020037E559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A6564F1CBED5020037E559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				74239C121CC9A10D001D624B /* CampaignsViewController.swift */,
 				74239C141CCAB64E001D624B /* MailingListViewController.swift */,
 				74239C161CCABB83001D624B /* AnalyticsViewController.swift */,
+				74239C3D1CCBBC05001D624B /* DataContainerSingleton.swift */,
 			);
 			path = Rabbitmail;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				74A656601CBFEC990037E559 /* LoginViewController.swift in Sources */,
 				74A656731CC13A760037E559 /* SWCustomerDashboardViewController.swift in Sources */,
 				74239C171CCABB83001D624B /* AnalyticsViewController.swift in Sources */,
+				74239C3E1CCBBC05001D624B /* DataContainerSingleton.swift in Sources */,
 				74239C131CC9A10D001D624B /* CampaignsViewController.swift in Sources */,
 				74A656621CC0317E0037E559 /* CustomerDashboardViewController.swift in Sources */,
 				74A6566F1CC12CE80037E559 /* SWRevealViewController.m in Sources */,

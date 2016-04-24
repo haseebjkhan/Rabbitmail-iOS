@@ -13,6 +13,19 @@ class MailingListTableViewController: UITableViewController {
     var mailingLists:[PSO_MailingList] = mailingListsData
     var mailingListIdToPass:String!
     
+    @IBOutlet var menuButton: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

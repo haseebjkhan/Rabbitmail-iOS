@@ -563,9 +563,12 @@
                             <outlet property="delegate" destination="w5L-cu-6qc" id="gyf-5e-Dbp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Mailing Lists" id="EPf-0c-riN"/>
+                    <navigationItem key="navigationItem" title="Mailing Lists" id="EPf-0c-riN">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="1ab-j0-SrM"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="menuButton" destination="1ab-j0-SrM" id="Djo-NQ-BIq"/>
                         <segue destination="PUZ-uK-v0w" kind="show" identifier="showMailingListRowDetail" id="ezB-aF-KML"/>
                     </connections>
                 </tableViewController>

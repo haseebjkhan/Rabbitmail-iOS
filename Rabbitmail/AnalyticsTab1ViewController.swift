@@ -1,5 +1,5 @@
 //
-//  AnalyticsViewController.swift
+//  AnalyticsTab1ViewController.swift
 //  Rabbitmail
 //
 //  Created by Shumail Mohy ud Din on 4/23/16.
@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-class AnalyticsViewController: UIViewController {
+class AnalyticsTab1ViewController: UIViewController {
 
     @IBOutlet weak var barChartView: BarChartView!
     

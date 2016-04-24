@@ -11,7 +11,6 @@ import Charts
 
 class AnalyticsViewController: UIViewController {
 
-    @IBOutlet var menuButton: UIBarButtonItem!
     @IBOutlet weak var barChartView: BarChartView!
     
     var months: [String]!
@@ -19,11 +18,7 @@ class AnalyticsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+        self.tabBarController?.navigationItem.title = "Campaign Analytics"
         
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         let emailsSent = [10000, 4000, 6000, 3000, 12000, 1600, 4000, 1800, 2000, 4000, 5000, 4000.0]
